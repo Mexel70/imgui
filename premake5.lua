@@ -27,6 +27,10 @@ project "ImGui"
     filter "system:windows"
         systemversion "latest"
 
+        defines {
+            "IMGUI_API=__declspec(dllexport)"
+        }
+
     filter "system:linux"
         systemversion "latest"
 
